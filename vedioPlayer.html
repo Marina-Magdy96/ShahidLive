@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Watch</title>
+	<link rel="stylesheet" href="CSS/styles.css">
+	<script src="Js/myscripts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Oxanium|Yeon+Sung&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body >
+	<div class="topnav vedioNav" id="myTopnav">
+		<a class=" leftNav shahid" href="main.html" ><img src="shahidLogoE.png"></a>
+		<a class="leftNav " href="series.html" >Series</a>
+		<a class="leftNav" href="film.html" >Films</a>
+		<a class="leftNav" href="channels.html" >Channels</a>
+		<a class="rightNav" href="#about" onclick="document.getElementById('id01').style.display='block'">
+			<img id="showImgLogin"class="imgNav"src="login.PNG">
+			<p id="showTextLogin">Login</p>
+	    </a>
+	  	<a  class="rightNav" href="#about" onclick="openSearch()">
+			<img id="showImgSearch"class="imgNav" src="loupe.PNG">
+			<p id="showTextSearch">search</p>
+	    </a>
+		<a class="lan" href="vedioPlayerArabic.html" > ع  </a>
+		<a class="lanar" href="vedioPlayerArabic.html" > اللغة العربية  </a>
+	    <a href="javascript:void(0);"  class="icon"  onclick="myFunction()">&#9776;</a>
+	</div>
+	<!---------------------------------------------------- Video Player---------------------------------------------->
+	<div id="videoDiv">
+		<video  id="videoTag" controls>
+			<source src="Average is for the weak.mp4" type="video/mp4" >
+			Your browser does not support video.
+		</video>
+	</div>
+	<!---------------------------------------------------- Footer ---------------------------------------------->
+	<div id="Footer" class="page-footer font-small stylish-color-dark  " >
+		<div class="footer-copyright text-center ">Copyright©2020 :
+			<a href="main.html" id="FooterLink"> SHAHID LIVE</a>
+			<p id="vedioSpan">All Rights Reserved</p>
+		</div>
+	</div>
+	<!----------------------------------------------------- Sign in----------------------------------------------->
+	<div id="id01" class="modalS">
+	  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <form class="modalS-content" action="/action_page.php">
+		<div class="containerS">
+		  <h1>Sign Up</h1>
+		  
+		  <hr>
+		  <label for="email"><b>Email</b></label>
+		  <input type="text"  name="email" align="center" required>
+
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" name="psw" required>
+
+		  <label for="psw-repeat"><b>Repeat Password</b></label>
+		  <input type="password"  name="psw-repeat" required>
+		  
+		  <div class="clearfix">
+			<button type="submit" class="signupbtn">Sign Up</button>
+		  </div>
+		</div>
+	  </form>
+	</div>
+	<!----------------------------------------------------Search-------------------------------------------------------------->
+	<div id="myOverlay" class="overlay">
+	    <span class="close" onclick="closeSearch()" title="Close Overlay">×</span>
+	    <div class="overlay-content">
+			<form action="/action_page.php">
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			  <input type="text" placeholder="Search.." name="search">
+
+			</form>
+			<div class="row mx-auto px-auto" id="myChannels" >
+				<div class="col-x1-3 col-lg-4 col-md-6 col-sm-12 channel containerO" >
+					<img src="MBC-1.png" class="image">
+					<div class="textDescription">
+						<h2 class="h2channels"> MBC</h2>
+						<p class="pchannels"> Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.</p>
+					</div>
+					<div class="middle">
+						<a href="#"><i class="fa fa-play-circle-o"></i></a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+
+</body>
+</html>

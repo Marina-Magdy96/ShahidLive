@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Films</title>
+	<link rel="stylesheet" href="CSS/stylesArabic.css">
+	<script src="Js/myscripts.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Oxanium|Yeon+Sung&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+	<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body >
+	<div class="topnav vedioNav" id="myTopnav">
+		<a class=" rightNav shahid" href="mainArabic.html" ><img src="shahidLogoAr.png"></a>
+		<a class="rightNav active" href="seriesArabic.html" >مسلسلات</a>
+		<a class="rightNav" href="filmArabic.html" >أفلام</a>
+		<a class="rightNav" href="channelsArabic.html" >قنوات</a>
+		<a class=" leftNav" href="#about" onclick="document.getElementById('id01').style.display='block'">
+			<img id="showImgLogin"class="imgNav"src="login.PNG">
+			<p id="showTextLogin">تسجيل دخول</p>
+	    </a>
+	  	<a  class=" leftNav" href="#about" onclick="openSearch()">
+			<img id="showImgSearch"class="imgNav" src="loupe.PNG">
+			<p id="showTextSearch">بحث</p>
+	    </a>
+		<a class="lan" href="series.html" > EN </a>
+		<a class="lanar" href="series.html" > English Language  </a>
+	    <a href="javascript:void(0);"  class="icon"  onclick="myFunction()">&#9776;</a>
+	</div>
+<!-------------------------------------------------------------------------- Slider 1 ------------------------------------------------------------------------>
+	<div id="mySlider">
+		<div class="Modern-Slider">
+			<div class="item">
+				<div class="img-fill">
+					<a href="vedioPlayerArabic.html">
+					  <img src="img1.jpg" alt="">
+					  <div class="info">
+						<div>
+						  <h3> Full Width Slider With Layers</h3>
+						  <h5>You can easily add image, html formatted texts and video layers over each slide and each layer accepts unique animation.</h5>
+						</div>
+					  </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--------------------------------------------------------------------Slider2--------------------------------------------------------------------------------->
+	<h1 class="departments">Romantic Films</h1>
+	<div class="owl-slider">
+		<div id="carousel2" class="owl-carousel">
+			<div class="item2">
+				<img class="owl-lazy overlayImage" data-src="img1.jpg" alt="">
+				<div class="description"><h2 >Metacritic</h2>
+					<p>Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.</p>
+				</div>
+				<div class="ovelayIcon">
+					<a href="#"><i class="fa fa-play-circle-o"></i></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!----------------------------------------------------- Sign in----------------------------------------------->
+	<div id="id01" class="modalS">
+	  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <form class="modalS-content" action="/action_page.php">
+		<div class="containerS">
+		  <h1>تسجيل الدخول</h1>
+		  
+		  <hr>
+		  <label for="email"><b>البريد الإلكتروني</b></label>
+		  <input type="text"  name="email" align="center" required>
+
+		  <label for="psw"><b>كلمه السر</b></label>
+		  <input type="password" name="psw" required>
+
+		  <label for="psw-repeat"><b>إعادة كلمة السر</b></label>
+		  <input type="password"  name="psw-repeat" required>
+		  
+		  <div class="clearfix">
+			<button type="submit" class="signupbtn">تسجيل الدخول</button>
+		  </div>
+		</div>
+	  </form>
+	</div>
+	<!----------------------------------------------------Search-------------------------------------------------------------->
+	<div id="myOverlay" class="overlay">
+	    <span class="close" onclick="closeSearch()" title="Close Overlay">×</span>
+	    <div class="overlay-content">
+			<form action="/action_page.php">
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			  <input type="text" placeholder="... بحث" name="search">
+
+			</form>
+			<div class="row justify-content-end mx-auto px-auto" id="myChannels" >
+				<div class="col-x1-3 col-lg-4 col-md-6 col-sm-12 channel containerO" >
+					<img src="MBC-1.png" class="image">
+					<div class="textDescription">
+						<h2 class="h2channels"> MBC</h2>
+						<p class="pchannels"> Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.</p>
+					</div>
+					<div class="middle">
+						<a href="#"><i class="fa fa-play-circle-o"></i></a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<!------------------------------button top --------------------------------------------------------------------------->
+	<button onclick="topFunction()" id="btnTop" title="Go to top"><i class='fas fa-angle-up'></i></button>
+	
+	
+	<script>
+	//------------------------------------------------slide 2 --------------------------------------------//
+		jQuery("#carousel2").owlCarousel
+		({
+			  autoplay: true,
+			  lazyLoad: true,
+			  loop: true,
+			  margin: 20,
+			   /*
+			  animateOut: 'fadeOut',
+			  animateIn: 'fadeIn',
+			  */
+			  responsiveClass: true,
+			  autoHeight: true,
+			  autoplayTimeout: 7000,
+			  smartSpeed: 800,
+			  nav: true,
+			  responsive: {
+				0: {
+				  items: 1
+				},
+
+				600: {
+				  items: 3
+				},
+
+				1024: {
+				  items: 4
+				},
+
+				1366: {
+				  items: 4
+				}
+			  }
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+    
+			// Slider Options
+			$(".Modern-Slider").slick({
+			autoplay:true,
+			autoplaySpeed:10000,
+			speed:600,
+			slidesToShow:1,
+			slidesToScroll:1,
+			pauseOnHover:false,
+			dots:true,
+			pauseOnDotsHover:true,
+			cssEase:'linear',
+			fade:true,
+			draggable:false,
+			prevArrow:'<button class="PrevArrow"><i class="fas fa-angle-left"></i> <span class="Thumbnail"></span></button>',
+			nextArrow:'<button class="NextArrow"><i class="fas fa-angle-right"></i> <span class="Thumbnail"></span></button>', 
+			});
+			
+			// Arrows Thumbnails Trick
+			var PrevThumbinalFirst = $(".Modern-Slider .item:last-child").children(".img-fill").children("img").attr("src");
+			$(".Modern-Slider .PrevArrow .Thumbnail").css({ "background-image":"url(" + PrevThumbinalFirst + ")"})
+			var NextThumbinalFirst = $(".Modern-Slider .item:first-child").next().children(".img-fill").children("img").attr("src");
+			$(".Modern-Slider .NextArrow .Thumbnail").css({ "background-image":"url(" + NextThumbinalFirst + ")"})
+			
+			$(".Modern-Slider").on('afterChange', function(event, slick, currentSlide){ 
+				var PrevThumbinal = $(".Modern-Slider .item.slick-active").prev(".item").children(".img-fill").children("img").attr("src");
+				$(".Modern-Slider .PrevArrow .Thumbnail").css({ "background-image":"url(" + PrevThumbinal + ")"})
+				
+				var NextThumbinal = $(".Modern-Slider .item.slick-active").next(".item").children(".img-fill").children("img").attr("src");
+				$(".Modern-Slider .NextArrow .Thumbnail").css({ "background-image":"url(" + NextThumbinal + ")"})   
+			});
+			
+		});
+    </script>
+
+
+</body>
+</html>

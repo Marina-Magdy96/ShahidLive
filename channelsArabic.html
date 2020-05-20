@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Channels</title>
+	<link rel="stylesheet" href="CSS/stylesArabic.css">
+	<script src="Js/myscripts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Oxanium|Yeon+Sung&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="topnav vedioNav" id="myTopnav">
+		<a class=" rightNav shahid" href="mainArabic.html" ><img src="shahidLogoAr.png"></a>
+		<a class="rightNav " href="seriesArabic.html" >مسلسلات</a>
+		<a class="rightNav" href="filmArabic.html" >أفلام</a>
+		<a class="rightNav active" href="channelsArabic.html" >قنوات</a>
+		<a class=" leftNav" href="#about" onclick="document.getElementById('id01').style.display='block'">
+			<img id="showImgLogin"class="imgNav"src="login.PNG">
+			<p id="showTextLogin">تسجيل دخول</p>
+	    </a>
+	  	<a  class=" leftNav" href="#about" onclick="openSearch()">
+			<img id="showImgSearch"class="imgNav" src="loupe.PNG">
+			<p id="showTextSearch">بحث</p>
+	    </a>
+		<a class="lan" href="channels.html" > EN </a>
+		<a class="lanar" href="channels.html" > English Language  </a>
+	    <a href="javascript:void(0);"  class="icon"  onclick="myFunction()">&#9776;</a>
+	</div>
+	<!---------------------------------------------------- Channels---------------------------------------------->
+	<h1 class="All"> All Channels</h1>
+	<div class="row justify-content-end mx-auto px-auto" id="myChannels" >
+		<div class="col-x1-3 col-lg-4 col-md-6 col-sm-12 channel containerO" >
+			<img src="MBC-1.png" class="image">
+			<div class="textDescription">
+				<h2 class="h2channels"> MBC</h2>
+				<p class="pchannels"> Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.</p>
+			</div>
+			<div class="middle">
+				<a href="#"><i class="fa fa-play-circle-o"></i></a>
+			</div>
+		</div>
+	</div>
+	<!----------------------------------------------------- Sign in----------------------------------------------->
+	<div id="id01" class="modalS">
+	  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <form class="modalS-content" action="/action_page.php">
+		<div class="containerS">
+		  <h1>Sign Up</h1>
+		  
+		  <hr>
+		  <label for="email"><b>Email</b></label>
+		  <input type="text"  name="email" align="center" required>
+
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" name="psw" required>
+
+		  <label for="psw-repeat"><b>Repeat Password</b></label>
+		  <input type="password"  name="psw-repeat" required>
+		  
+		  <div class="clearfix">
+			<button type="submit" class="signupbtn">Sign Up</button>
+		  </div>
+		</div>
+	  </form>
+	</div>
+	<!----------------------------------------------------Search-------------------------------------------------------------->
+	<div id="myOverlay" class="overlay">
+	    <span class="close" onclick="closeSearch()" title="Close Overlay">×</span>
+	    <div class="overlay-content">
+			<form action="/action_page.php">
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			  <input type="text" placeholder="Search.." name="search">
+
+			</form>
+			<div class="row justify-content-end mx-auto px-auto" id="myChannels" >
+				<div class="col-x1-3 col-lg-4 col-md-6 col-sm-12 channel containerO" >
+					<img src="MBC-1.png" class="image">
+					<div class="textDescription">
+						<h2 class="h2channels"> MBC</h2>
+						<p class="pchannels"> Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.</p>
+					</div>
+					<div class="middle">
+						<a href="#"><i class="fa fa-play-circle-o"></i></a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	
+	<!------------------------------button top --------------------------------------------------------------------------->
+	<button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	
+	<!----------------------------------------------- nav background on scroll-------------------------------------------------->
+
+	<script>
+		//----------------------------------------------- nav background on scroll--------------------------------------------------
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				document.getElementById("myTopnav").style.backgroundColor  = "white";
+				document.getElementById("btnTop").style.display = "block";
+				document.getElementById("myTopnav").style.boxShadow  = "0px .1px 16px 0px rgba(0,0,0,0.2)";
+			  } else {
+				document.getElementById("myTopnav").style.backgroundColor  = "transparent";
+				document.getElementById("btnTop").style.display = "none";
+				document.getElementById("myTopnav").style.boxShadow  = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+	</script>
+</body>
+</html>
