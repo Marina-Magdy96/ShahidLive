@@ -784,7 +784,7 @@ form label{font-size:22px;}
 }
 
 .Modern-Slider .item .img-fill{
-    height:calc(100vh - 20px);
+    height:80vh;
     background:#000;
 }
 
