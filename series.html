@@ -22,9 +22,9 @@
 <body >
 	<div class="topnav " id="myTopnav">
 		<a class=" leftNav shahid" href="main.html" ><img src="shahidLogoE.png"></a>
-		<a class="leftNav active" href="#home" >Series</a>
-		<a class="leftNav " href="#home" >Films</a>
-		<a class="leftNav" href="#home" >Channels</a>
+		<a class="leftNav active" href="series.html" >Series</a>
+		<a class="leftNav " href="film.html" >Films</a>
+		<a class="leftNav" href="channels.html" >Channels</a>
 		<a class="rightNav" href="#about" onclick="document.getElementById('id01').style.display='block'">
 			<img id="showImgLogin"class="imgNav"src="login.PNG">
 			<p id="showTextLogin">Login</p>
@@ -33,8 +33,8 @@
 			<img id="showImgSearch"class="imgNav" src="loupe.PNG">
 			<p id="showTextSearch">search</p>
 	    </a>
-		<a class="lan" href="#about" > ع  </a>
-		<a class="lanar" href="#about" > اللغة العربية  </a>
+		<a class="lan" href="seriesArabic.html" > ع  </a>
+		<a class="lanar" href="seriesArabic.html" > اللغة العربية  </a>
 	    <a href="javascript:void(0);"  class="icon"  onclick="myFunction()">&#9776;</a>
 	</div>
 <!-------------------------------------------------------------------------- Slider 1 ------------------------------------------------------------------------>
@@ -55,6 +55,8 @@
 			</div>	
 		</div>
 	</div>
+<!--------------------------------------------------------------------google play--------------------------------------------------------------------------------->
+	<a href="#"  id="googlePlay" ><img src="img/googlePlay.jpg" ></a>
 <!--------------------------------------------------------------------Slider2--------------------------------------------------------------------------------->
 	<h1 class="departments">Romantic Films</h1>
 	<div class="owl-slider">
@@ -156,7 +158,8 @@
 
 	<script>
 		  $(document).ready(function(){
-			
+			// google play
+			$('#googlePlay').delay(60000).fadeOut(6000);
 			// Slider Options
 			$(".Modern-Slider").slick({
 			autoplay:true,

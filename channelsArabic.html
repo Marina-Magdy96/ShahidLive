@@ -31,6 +31,8 @@
 		<a class="lanar" href="channels.html" > English Language  </a>
 	    <a href="javascript:void(0);"  class="icon"  onclick="myFunction()">&#9776;</a>
 	</div>
+	<!--------------------------------------------------------------------google play--------------------------------------------------------------------------------->
+	<a href="#"  id="googlePlayChannel" ><img src="img/googlePlay.jpg" ></a>
 	<!---------------------------------------------------- Channels---------------------------------------------->
 	<h1 class="All"> All Channels</h1>
 	<div class="row justify-content-end mx-auto px-auto" id="myChannels" >
@@ -98,6 +100,11 @@
 	<!----------------------------------------------- nav background on scroll-------------------------------------------------->
 
 	<script>
+		$(document).ready(function(){
+			// google play
+			$('#googlePlayChannel').delay(60000).fadeOut(6000);
+		});
+
 		//----------------------------------------------- nav background on scroll--------------------------------------------------
 			window.onscroll = function() {scrollFunction()};
 

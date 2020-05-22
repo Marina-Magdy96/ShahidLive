@@ -418,7 +418,7 @@ form label
 	color: #a7cfe1 !important;
     opacity: 1;
 }
-.overlay .close:hover{
+.close:hover{
  color:white !important;
 }
 .overlay ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -653,6 +653,21 @@ form label
 {
 	bottom:25px;
 }
+/*--------------------------------google play --------------------------------------------------*/
+#googlePlay img
+{
+	width:250px;
+	height:80px;
+	display: block;
+	margin: 20px auto;
+}
+#googlePlayChannel img
+ {
+	width:250px;
+	height:80px;
+	display: block;
+	margin: 75px auto -80px auto;
+ } 
 /*------------------------------------Slider1-------------------------------------------------*/
 
 .img-fill{
