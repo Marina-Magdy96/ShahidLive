@@ -23,9 +23,9 @@ body {margin:0;background-color: #f2f2f2;height: 100%;overflow-x: hidden;}
 .topnav a ,.topnav .dropbtn1{
   color:#a7cfe1;
   text-align: center;
-  padding: 10px 15px ;
+  padding: 4px 15px ;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   font-family: 'Yeon Sung' ;
   border: none;
   transition: all .5s ease;
@@ -102,8 +102,8 @@ body {margin:0;background-color: #f2f2f2;height: 100%;overflow-x: hidden;}
   
   text-decoration: none;
   color:#a7cfe1;
-  font-size:30px;
-  padding:6px 15px;
+  font-size:40px;
+  padding:0px 15px;
 }
 .column1 a:hover {
   background-color: white ;
@@ -118,14 +118,14 @@ body {margin:0;background-color: #f2f2f2;height: 100%;overflow-x: hidden;}
   padding: 6px 15px !important;
 }
 #showTextSearch,#showTextLogin{display:none;}
-.imgNav{width:34px;height:34px;transition: all 1s ease;}
+.imgNav{width:45px;height:45px;transition: all 1s ease;}
 /*.topnav a:hover .imgNav{width:40px;height:40px;}*/
 .lan{
 	line-height: 1em;
     float: right;
     padding: 4px 10px !important;
     border-radius: 10px;
-    margin: 7px 13px ;
+    margin: 9px 13px ;
     font-family: 'Lalezar', cursive !important;
     font-size: 30px !important;
     border: 2px solid #a7cfe1 !important;
@@ -784,7 +784,7 @@ form label{font-size:22px;}
 }
 
 .Modern-Slider .item .img-fill{
-    height:80vh;
+    height:70vh;
     background:#000;
 }
 
@@ -882,7 +882,7 @@ form label{font-size:22px;}
 	color:black;
 	font-family: 'Lalezar', cursive !important;
 	margin-left:10px;
-	margin-top:50px;
+	margin-top:30px;
 }
 
 .item2
